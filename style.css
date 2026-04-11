@@ -21,11 +21,31 @@
 }
 
 /* Styling for your profile picture */
+/* Styling for your profile picture */
 .profile {
-    width: 220px; /* Adjust this number to make it bigger or smaller */
-    height: 220px;
+    /* 1. Making the photo much smaller */
+    width: 100px;  /* Reduced from 220px. Adjust as needed (e.g., 80px or 120px) */
+    height: 100px; /* Must match width to keep it a circle */
+    
+    /* Layout and shape */
     border-radius: 50%; /* Makes the image a perfect circle */
-    object-fit: cover; /* Prevents the image from looking stretched/squished */
-    border: 4px solid #222; /* Adds a clean dark border around the image */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Adds a soft shadow */
+    object-fit: cover;  /* Prevents the image from looking stretched/squished */
+    margin-left: auto;   /* Pushes the image container to the right */
+    
+    /* Starting border and shadow (subtle default state) */
+    border: 3px solid #222; /* Default dark border style */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    
+    /* Smooth Transition (Crucial for a nice effect) */
+    /* This makes the color change fade in smoothly rather than snapping */
+    transition: all 0.2s ease-in-out; 
+}
+
+/* 2. ADD THIS NEW FUNCTION BELOW */
+/* This block activates ONLY when the mouse arrow (hover) is over the picture */
+.profile:hover {
+    border-color: red; /* Change existing border color to red */
+    
+    /* Optional: Slightly increase shadow depth and color for emphasis on hover */
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.2); 
 }
