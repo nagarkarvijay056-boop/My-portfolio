@@ -23,23 +23,31 @@
 /* Styling for your profile picture */
 /* Styling for your profile picture */
 /* Styling for your profile picture */
+/* Styling for your profile picture */
 .profile {
-    /* 1. Making the photo much smaller */
-    width: 1px;  /* Reduced from 220px. Adjust as needed (e.g., 80px or 120px) */
-    height: 1px; /* Must match width to keep it a circle */
+    /* 1. Making it a rectangle */
+    width: 120px;  
+    height: 160px; /* Making height taller than width creates a portrait rectangle */
     
-    /* Layout and shape */
-    border-radius: 50%; /* Makes the image a perfect circle */
-    object-fit: cover;  /* Prevents the image from looking stretched/squished */
-    margin-left: auto;   /* Pushes the image container to the right */
+    /* 2. Fixing the corners */
+    border-radius: 8px; /* Gives it slightly soft, modern corners. Change to 0px for perfectly sharp corners! */
     
-    /* Starting border and shadow (subtle default state) */
-    border: 3px solid #222; /* Default dark border style */
-    box-shadow: 0 4px 8px rgba(0,0,0,1); /* Subtle shadow */
+    /* Layout and styling */
+    object-fit: cover;  /* Prevents your photo from getting squished or stretched */
+    margin-left: auto;   
     
-    /* Smooth Transition (Crucial for a nice effect) */
-    /* This makes the color change fade in smoothly rather than snapping */
+    /* Starting border and shadow */
+    border: 3px solid #222; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    
+    /* Smooth Transition for the hover effect */
     transition: all 0.2s ease-in-out; 
+}
+
+/* Your hover effect stays exactly the same */
+.profile:hover {
+    border-color: red; 
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.2); 
 }
 
 /* 2. ADD THIS NEW FUNCTION BELOW */
