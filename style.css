@@ -22,6 +22,7 @@
 
 /* Styling for your profile picture */
 /* Styling for your profile picture */
+/* Styling for your profile picture */
 .profile {
     /* 1. Making the photo much smaller */
     width: 100px;  /* Reduced from 220px. Adjust as needed (e.g., 80px or 120px) */
@@ -41,6 +42,14 @@
     transition: all 0.2s ease-in-out; 
 }
 
+/* 2. ADD THIS NEW FUNCTION BELOW */
+/* This block activates ONLY when the mouse arrow (hover) is over the picture */
+.profile:hover {
+    border-color: red; /* Change existing border color to red */
+    
+    /* Optional: Slightly increase shadow depth and color for emphasis on hover */
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.2); 
+}
 /* 2. ADD THIS NEW FUNCTION BELOW */
 /* This block activates ONLY when the mouse arrow (hover) is over the picture */
 .profile:hover {
