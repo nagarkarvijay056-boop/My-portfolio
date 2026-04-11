@@ -1,1 +1,31 @@
+/* Layout for the header section */
+.hero-section {
+    display: flex;
+    justify-content: space-between; /* Pushes text to the left, image to the right */
+    align-items: center; /* Centers them vertically */
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: 0 auto; /* Centers the whole section on wide screens */
+    background-color: #fff;
+    border-bottom: 2px solid #eaeaea;
+}
 
+.hero-text {
+    flex: 1; /* Allows text to take up the remaining space */
+    padding-right: 40px; /* Keeps text from touching the image */
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Styling for your profile picture */
+.profile {
+    width: 220px; /* Adjust this number to make it bigger or smaller */
+    height: 220px;
+    border-radius: 50%; /* Makes the image a perfect circle */
+    object-fit: cover; /* Prevents the image from looking stretched/squished */
+    border: 4px solid #222; /* Adds a clean dark border around the image */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Adds a soft shadow */
+}
