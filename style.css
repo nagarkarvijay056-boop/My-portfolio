@@ -25,8 +25,8 @@
 /* Styling for your profile picture */
 .profile {
     /* 1. Making the photo much smaller */
-    width: 10px;  /* Reduced from 220px. Adjust as needed (e.g., 80px or 120px) */
-    height: 10px; /* Must match width to keep it a circle */
+    width: 1px;  /* Reduced from 220px. Adjust as needed (e.g., 80px or 120px) */
+    height: 1px; /* Must match width to keep it a circle */
     
     /* Layout and shape */
     border-radius: 50%; /* Makes the image a perfect circle */
